@@ -1,0 +1,823 @@
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    transition-duration: 100ms;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: #a1a4ae70;
+    position: relative;
+    z-index: 0;
+}
+
+.fontTesto {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+}
+
+/*------------------------------------*/
+/* Gestione classi Font */
+
+.testoSmall { font-size: small; }
+.testoMedium { font-size: medium; }
+.testoLarge { font-size: large; }
+.testoXLarge { font-size: x-large; }
+.testoXXLarge { font-size: xx-large; }
+.testoXXXLarge { font-size: 48px; }
+
+/*------------------------------------*/
+/* Gestione dell'Header */
+
+header {
+    background-image: url("img/media/bg.png");
+    background-size: cover;
+    margin: -8px;
+}
+
+header div {
+    margin: 15px;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Square Peg', cursive;
+    font-size: 250%;
+    
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+/*------------------------------------*/
+/* Gestione della Navbar sticky */
+
+.navbar {
+    text-align: center;
+
+    margin-top: -12px;
+    margin-left: -23px;
+    margin-right: -23px;
+    
+    border: 5px solid black;
+    border-left: 0px;
+    border-right: 0px;
+
+    background-color: #0a4a8e; /*Sostituto se l'immagine non puÃ² essere caricata*/
+    background-image: url("img/media/bg-nav.jpg");
+    background-size: cover;
+
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar ul, .navbar li {
+    display: inline-block;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    list-style-type: none;
+}
+
+.navbar a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    color: #000000;
+}
+
+.active {
+    text-decoration: overline;
+}
+
+/*------------------------------------*/
+/* Gestione del Contenuto Secondario */
+
+.changeTextSize{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#activeButton {
+    background-color: #e9bf2dd4;
+}
+
+.footerAdsImg {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+/*------------------------------------*/
+/* Gestione del Footer */
+
+.footer {
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+#footerBackground {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-image: url(img/media/bg-footer.png);
+    background-size: cover;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    text-align: center;
+}
+
+.testoFooter {  
+    text-align: center;
+    border-bottom: 10px double black;
+    padding-bottom: 15px;
+    padding-top: 1px;
+    margin-top: -1px;
+}
+
+.testoFooter ul {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.testoFooter li {
+    color: white;
+    background-color: black;
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    border-radius: 10px; 
+}
+
+.testoFooter li:hover{
+    box-shadow: 5px 5px 2px white;
+}
+
+.testoFooter i {
+    font-weight: bold;
+    display: block;
+}
+
+/*------------------------------------*/
+/* Gestione della pagina di Index */
+
+#benvenuto {
+    padding-top: 20px; 
+}
+
+#benvenuto h2 {
+    padding: 0px;
+    padding-bottom: 10px;
+    
+    margin: 0px;
+    text-align: justify;
+}
+
+.userArticle {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.386);
+    background-image: url(img/media/articleBackground.png);
+    background-size: cover;
+    background-color: rgba(8, 10, 110, 0.064);
+    
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    
+    padding-top: 0px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.userArticle div {
+    color: darkred;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.userArticle span{
+    color: darkblue;
+}
+
+.userArticle img {
+    padding: 0px;
+    margin-right: 10px;
+    
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+/*------------------------------------*/
+/* Gestione delle parti comuni */
+
+h2 {
+    display: block;
+    
+    border-bottom: 20px;
+    text-align: center; 
+    
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-radius: inherit;
+    
+    padding: inherit;
+    
+    margin: inherit;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: darkblue;
+}
+
+select {
+    border: 2px solid darkblue;
+    padding: 5px;
+}
+
+.erroreInput {
+    color: darkred;
+    font-weight: bold;
+}
+
+.inputCorretto {
+    color: green;
+    font-weight: bold;
+}
+
+.hideBox {
+    display: none;
+}
+
+.subtitle{
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+.subtitle li {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+/*------------------------------------*/
+/* Gestione pagina Login */
+
+form[action=LogoutServlet] {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type=submit]{
+  background-color: #a45029;
+  color: white;
+
+  border: none;
+  padding: 15px 32px;
+
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+
+  margin: 4px 2px;
+
+  cursor: pointer;
+
+  border-radius: 5px;
+}
+
+.credentials {
+    text-align: center;
+}
+
+#login, #sign-up {
+    box-shadow: 0 0 10px #0000004d;
+    background-color: #ffffffd3;
+    border-radius: 15px;
+    
+    padding: 20px;
+    
+    margin-top: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+#login input, #sign-up input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    display: inline-block;
+
+    border: 1px solid rgb(191, 189, 230);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.charCount {
+    color: darkblue;
+    font-weight: bold;
+}
+
+#login button[type=submit], #sign-up button[type=submit] {
+    background-color: #6ba429;
+    color: white;
+  
+    border: none;
+    padding: 15px 32px;
+      
+    cursor: pointer;
+  
+    border-radius: 5px;
+}
+
+#login label, #sign-up label {
+    display: block;
+    padding: 10px;
+}
+
+.showLogin, .showRegistration {
+    background-color: #692072;
+    color: white;
+  
+    border: none;
+    padding: 15px 32px;
+      
+    cursor: pointer;
+  
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/*------------------------------------*/
+/* Gestione pagina elenco eventi */
+
+.userEvent {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.386);
+    border: 0.5px solid black;
+    border-radius: 25px;
+
+    background-image: url(img/media/eventBackground.png);
+    background-size: cover;
+    
+    margin: -10px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    
+    padding: 15px;
+    overflow: hidden;
+    
+    text-align: center;
+}
+
+.userEvent h3 {
+    display: block;
+    
+    border-bottom: 20px;
+    text-align: center; 
+    
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-radius: inherit;
+    
+    padding: inherit;
+    
+    margin: inherit;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+ .eventImage {
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: inherit;
+    margin: 10px;
+    margin-left: 25px;
+ }
+ 
+ .userEvent p {
+    padding: 20px;
+    padding-bottom: 0px;
+    text-align: justify;
+ }
+ 
+ .userEvent div {
+     padding-top: 2px;
+ }
+ 
+.userEvent div p{
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.compraBiglietto {
+    padding: 5px;
+    float: none;
+}
+
+/*------------------------------------*/
+/* Gestione pagina personale */
+
+.userProfileBox {
+    text-align: center;
+}
+
+.userProfileBox img {
+    width: 40%;
+    margin: 20px;
+    margin-bottom: 0px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 0px;
+}
+   
+.userProfileBox button {
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 0px;
+}
+
+.userProfileBox a:visited, .userProfileBox a:link {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    padding: 20px;
+}
+
+/*------------------------------------*/
+/* Gestione pagina Errore e Inserimento-Registrazione confermato */
+
+#errorMessage {
+    color: darkred;
+}
+
+#errorMessage:first-line {
+    color: black;
+}
+
+.message{
+    text-align: center;
+    float: none;
+    font-family: 'Noto Sans', sans-serif;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+/*------------------------------------*/
+/* Gestione dell'indice nella pagina di About */
+
+#index {
+    text-align: center;
+}
+
+#index nav {
+    font-weight: bold;
+
+    border: 2px solid black;   
+    border-right: 0px;
+    border-left: 0px
+}
+
+#index ul, #index li {
+    padding: 20px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    list-style-type: none;
+}
+
+#index a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#index a:hover{
+    box-shadow: 12px 10px 7px 1px #c84361;
+    border: 1px solid #C84361;
+    padding: 5px;
+}
+
+/*------------------------------------*/
+/* Gestione della visualizzazione delle informazioni nella pagina di About */
+
+#info, #team {
+    text-align: center;
+}
+
+#info p {
+    text-align: justify;
+    
+    border: 5px solid black;
+    border-radius:  10px;
+    background-image: linear-gradient(to bottom right, #e9bf2dd4, #971c1c4f);
+
+    padding: 20px;
+}
+
+#team b::first-line {
+    color: #C84361;
+}
+
+#team #flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.founder{    
+    margin-bottom: 10px;
+
+    border: 10px double black;
+
+    background-color: #F4F9F9;
+    padding: 25px 20px 25px 20px;
+}
+
+.founder img {
+    border: 10px double black;
+    float: left;
+    width: 216px;
+    padding: 0px;
+}
+
+.founder img:hover {
+    background-color: #C84361;
+}
+
+.founder p {
+    text-align: justify;
+    margin-left: 230px;
+}
+
+.founder b {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+#mascotte {
+    text-align: center;
+}
+
+#mascotte div{
+    background-color: #F4F9F9;
+    border: 10px double black;
+    padding: 30px;
+}
+
+#mascotte img {
+    border: 10px double black;
+    float: none;
+    padding: 0px;
+}
+
+#mascotte img:hover {
+    background-color: #C84361;
+}
+
+#mascotte b {
+    color: #C84361;
+}
+
+/*------------------------------------*/
+/* Gestione pagina inserimento evento e articolo */
+    
+#newArticle, #newEvent {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.386);
+    background-image: url(img/media/newBackground.png);
+    background-size: cover;
+    margin: -10px;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+#newArticle h2, #newEvent h2 {
+    text-align: center;
+    border: 0px; 
+}
+
+#newEvent p, #newArticle p {
+    display: inline;
+}
+
+.charCount {
+    color: darkblue;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  
+input[type=text], input[type=datetime-local], input[type=file]{ 
+    width: 50%; 
+    padding: 12px 20px; 
+    margin: 8px 0; 
+    display: inline-block; 
+    border: 1px solid rgb(191, 189, 230); 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 20px; 
+    margin-right: 4px 
+} 
+
+/*------------------------------------*/
+/* Modalità Smartphone */
+
+@media only screen and (max-width: 1005px){
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+    /* Modifica del Padding, per la modalità Mobile */
+    .mobilePadding {
+        padding: 0px;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione dell'Header in Mobile */
+    
+    header {
+        text-align: center;
+    }
+    
+    h1 {
+        float: none;
+        margin-left: 0px;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione della Navbar sticky in Mobile */
+    
+    .navbar {
+        border: 0px;
+        margin-top: -28px;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+    
+    .navbar li{
+        display: block;
+        border-bottom: 5px solid black;
+        padding: 2px;
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    .navbar ul:first-child{
+        border-top: 5px solid black;
+    }
+    
+    .active {
+        text-decoration: none;
+        background-color: #00001a87;
+    }
+   
+    /*------------------------------------*/
+    /* Gestione del Footer in Mobile */
+    
+    .testoFooter ul {
+        display: inline-grid;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione della pagina di Index in Mobile */
+    
+    .userArticle img {
+        margin-bottom: 20px;
+    }
+    
+    #login input, #sign-up input {
+        width: 80%;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione della pagina con l'elenco di eventi */
+    
+    .userEvent img {
+        margin: 0px;
+        float: none;
+    }
+    
+    .userEvent p {
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .userEvent .testoS {
+        text-align: justify;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione pagina personale */
+    
+    .userProfileBox img {
+        width: 50%;
+    }
+    
+    .userProfileBox div {
+        display: inline-block;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione pagina inserimento elenco e articolo */
+    #newEvent, #newArticle {
+        text-align: center;
+    }
+    
+    #newEvent p, #newArticle p {
+        display: block;
+    }
+    
+    input[type=text], input[type=datetime-local], input[type=file] {
+        width: 100%;
+    }
+    
+    .compraBiglietto {
+        margin-top: 10px;
+        display: block;
+    }
+    
+    /*------------------------------------*/
+    /* Gestione pagina di about */
+    
+    .founder p {
+        margin-left: 0px;
+    }
+    
+    .founder img {
+        width: 50%;
+        float: none;
+    }
+    
+    /*------------------------------------*/
+}
+
+/*------------------------------------*/
+/* Modalità Desktop */
+@media only screen and (min-width: 1006px) {
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+}
+
+/*------------------------------------*/
+
